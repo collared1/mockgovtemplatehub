@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <style>
@@ -9,6 +10,13 @@
       .mainHeaders {
         width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .mainHeaders p {
+          width: 80%;
       }
       h1 {
         margin-bottom: 5px;
@@ -17,18 +25,20 @@
         display: grid;
         width: 100%;
         grid-template-columns: repeat(4, 1fr);
-        border-radius: 10px;
-        background-color: #444444;
         box-sizing: border-box;
-        gap: 5px;
+        gap: 10px;
       }
       .templateBox {
         height: 30vh;
         padding: 10px;
+        box-sizing: border-box;
+        background-color: #444444;
+        border-radius: 10px;
       }
       .templateBox h1 {
         border-bottom: 2px solid white;
         font-size: 20px;
+        padding-bottom: 5px;
       }
       .getButton {
         width: 100%;
@@ -38,10 +48,10 @@
         cursor: pointer;
         align-items: center;
         justify-content: center;
-        font-size: 15px;
         text-decoration: none;
         color: white;
         border-radius: 5px;
+        background-color: #666666;
       }
       .warningFooter {
         color: #FF0000;
